@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function onPress(){
+        fetch("http://localhost:3000/todos", {
+            method: "GET",
+        }).then(async x => {
+            console.log(await x.json())
+        })
+    }
+</script>
+<body>
+    Todo title
+    <input type="text" id="title1"></input>
+    <br><br>
+    Todo description
+    <input type="text" id="description"></input>
+    <br><br>
+    <button onclick="onPress()">send todo</button>
+    <div id="mainArea">
+
+    </div>
+</body>
+</html>

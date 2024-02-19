@@ -1,0 +1,6 @@
+Requirement API
+GET - TO get all the data
+POST - To create / insert new To Do task to an array,file,databases
+DELETE -  to delete a particular task
+PUT -  To Update an existing task
+GET (/:id) - To get data of a particular task
